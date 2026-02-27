@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Django Lab{% endblock %}</title>
+    <title>{% block title %}Django CRUD Lab{% endblock %}</title>
 </head>
 <body>
-    {% block content %}{% endblock %}
+    {%  include "partials/navbar.html" %}
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
 </html>
